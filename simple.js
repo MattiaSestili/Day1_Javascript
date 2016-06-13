@@ -9,14 +9,16 @@ var userinput1 = parseInt(document.getElementById("input1").value);
 var userinput2 = parseInt(document.getElementById("input2").value);
 
 //output the larger
-if(userinput1 > userinput2){
+/**if(userinput1 > userinput2){
     document.getElementById("demo").innerHTML = userinput1;
     console.log("The larger is " + userinput1);
-}else{
+//}else{
     document.getElementById("demo").innerHTML = userinput2;
     console.log("The larger is " + userinput2);
+}**/
+document.getElementById("demo").innerHTML = Math.max(userinput1,userinput2);
 }
-}
+
 
 var event2 = document.getElementById("button1");
 event2.addEventListener('click',calculation,false);
